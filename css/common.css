@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	background-color: #413d72;
+}
+
+button {
+	border-radius: 5px;
+	transition: opacity 0.3s;
+}
+
+button:hover {
+    /* 鼠标悬停时的样式 */
+    opacity: 0.8; /* 增加透明度 */
+}
+
+button[type="primary"] {
+    background-color: #7a4dff;
+    color: white;
+	border: 2px solid #7a4dff; 
+}

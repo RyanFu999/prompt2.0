@@ -1,0 +1,289 @@
+
+/*****************************************
+*  header
+*****************************************/
+.header {
+	padding:10px;
+	overflow: auto;
+	height:650px;
+}
+
+.header .header_logo {
+	font-size: 20px;
+	color: white;
+	float: left;
+	padding-right: 30px;
+}
+
+.header .header_logo img {
+	vertical-align: middle;
+	width: 30px; /* 设置图片大小 */
+	height: 30px;
+	border-radius: 20%;
+	margin-left:10px;
+	margin-right: 12px;
+}
+
+.header .tooltip {
+	color:white;
+	text-align: center; /* 文本水平居中对齐 */
+	position: relative;
+}
+
+.header .tooltip .ti-layout-grid2 {
+	font-size: 15px; /* 设置图标大小 */
+	padding-right:2px;
+	display: inline-block; /* 设置为行内块元素 */
+	vertical-align: middle; /* 垂直居中对齐 */
+}
+
+.header .tooltip .tipText {
+	padding:20px;
+}
+
+.header .tooltip .tipText:hover {
+	color: #7a4dff;
+}
+
+.header .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 600px;
+	height: 500px;
+	background-color: #504d84;
+	color: #fff;
+	border-radius: 6px;
+	padding: 25px;
+
+	/* 位置设置 */
+	position: absolute;
+	z-index: 1;
+	top:150%;
+	left: 50%;
+	margin-left: -130px;
+
+	/* 渐变显示 */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.header .tooltip .tooltiptext div {
+	display:block;
+	padding-bottom: 15px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.header .tooltip .tooltiptext a {
+	color: white;
+	padding: 3px;
+	margin: 5px;
+	font-size: 13px;
+	text-decoration: none;
+	white-space: nowrap; 
+}
+
+.nav .tooltip .tooltiptext .title {
+	font-size: 18px;
+	height: 50px;
+	width:80px;
+	margin-right: 30px;
+}
+	/* float:left; */
+	padding-bottom: 10px;
+	padding-right: 10px;
+	width: 80px; /* 设置容器的固定宽度 */
+	height: 100px; /* 设置容器的固定高度 */
+}
+
+.header.tooltip .tooltiptext a:hover {
+	color: #7a4dff;
+}
+
+/* 当鼠标悬停时显示 */
+.tooltip:hover .tooltiptext, .tooltip .tooltiptext:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.header .nav {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5px;
+	align-items: center;
+	border-bottom: 2px solid rgba(255,255,255,0.2); /* 底部边框 */
+}
+
+.header .nav a {
+	color: white;
+	text-decoration: none;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 4px; /* 设置圆角 */
+	float: left;
+}
+
+.header .nav a:hover {
+	background-color: grey;
+}
+
+.header .nav .header-login {
+	float: right;
+	margin-right: 20px;
+	background-color: blueviolet;
+}
+
+.nav .search {
+	display: flex;
+	align-items: center;
+	height:40px;
+	width:500px;
+	padding-left: 5px;
+	padding-right: 15px;
+	color: white;
+	background-color: #66688d;
+	border-radius: 4px;
+	position: relative;
+	margin-right: 100px;;
+}
+
+.nav .search select {
+	color:white;
+	width:100px;
+	border: none; /* 移除边框 */
+	background-color: transparent; /* 背景透明 */
+	outline: none; /* 移除选中状态的边框 */
+}
+
+.nav .search option {
+	text-align: align;
+	height:30px;
+	background-color: #66688d;
+
+}
+
+.nav .search input {
+	color:white;
+	border: none; /* 移除边框 */
+	background-color: transparent; /* 背景透明 */
+	outline: none; /* 移除选中状态的边框 */
+	
+}
+
+.nav .search input::placeholder {
+	color: rgba(255,255,255,0.4);
+}
+
+.nav .search .search-btn i{
+	  transition: transform 0.2s; /* 添加过渡效果 */
+}
+
+.nav .search .search-btn:hover i {
+	transform: scale(1.2);
+}
+
+.nav .search .search-btn {
+	position: absolute;
+	right:0;
+	display: flex;
+	justify-content: center; /* 水平居中 */
+	align-items: center; /* 垂直居中 */
+	height:40px;
+	width:40px;
+	background-color: #79688d;
+}
+
+
+
+.header .banner .banner-left {
+	position: absolute; /* 使文字相对于容器绝对定位 */
+	top: 20%; /* 将文字垂直位置 */
+	left: 10%; /* 将文字水平位置 */
+	width: 500px;
+}
+
+.header .banner .banner-left-strong {
+    transform: translate(-50%, -50%); /* 通过平移来调整文字的位置 */
+    font-size: 50px; /* 设置文字大小 */
+    background: -webkit-linear-gradient(45deg, #ff7375, #6196e1); /* 设置渐变色作为文字颜色 */
+    -webkit-background-clip: text; /* 使用渐变色作为文字填充 */
+    -webkit-text-fill-color: transparent; /* 隐藏文字的实际颜色 */
+}
+
+.header .banner .banner-left .banner-left-type {
+	color: white;
+	font-size: 20px;
+}
+
+.header .banner .banner-left .banner-left-type em {
+	padding-right: 20px;
+}
+
+.header .banner .banner-left .banner-left-docs {
+	color: white;
+	/* font-size: small; */
+	padding-top:20px;
+	margin-top:30px;
+	letter-spacing: 2px;
+	opacity: 0.8;
+}
+
+.header .banner .banner-left .banner-left-btn {
+	margin-top:80px;
+}
+
+.header .banner .banner-left button {
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 30px;
+}
+
+.header .banner .banner-right {
+	position: absolute; /* 使文字相对于容器绝对定位 */
+	top: 20%; /* 将文字垂直位置 */
+	right: 10%; /* 将文字水平位置 */
+	width: 500px;
+}
+
+.header .banner .banner-right a {
+	margin:10px;
+	float: left;
+	border: 2px solid transparent; /* 透明边框 */
+	transition: border-color 0.3s ease; /* 定义边框颜色过渡效果 */
+	position: relative;
+}
+
+.header .banner .banner-right a:hover {
+	border: 2px solid #7a4dff;; /* 显示边框 */
+}
+
+.header .banner .banner-right a:hover img{
+	filter: brightness(70%); /* 图片变暗 */
+}
+
+.header .banner .banner-right a:hover button{
+	opacity: 1;
+}
+
+.header .banner .banner-right img {
+	width: 200px;
+	height: 180px;
+	transition: filter 0.3s;
+}
+
+.header .banner .banner-right a button{
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease;
+}
+
+.header .banner .banner-right .image-description {
+	color: white;
+}

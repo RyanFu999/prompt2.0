@@ -1,0 +1,37 @@
+
+.special-recommendation {
+	text-align: center;
+}
+
+/* 图片样式 */
+.special-recommendation img {
+	width: 250px; /* 图片宽度 */
+	height: auto; /* 自动调整高度 */
+	margin: 10px; /* 图片间距 */
+	cursor: pointer; /* 鼠标指针样式 */
+}
+  
+  .main .special-recommendation .title {
+	  position: relative;
+	  color: white;
+	  font-size: 30px;
+	  text-align: left;
+	  padding-left: 20px;
+	  padding-bottom: 10px;
+	  margin-bottom: 15px;
+	  border-bottom: 2px solid rgba(255,255,255,0.2); /* 底部边框 */
+  }
+  
+  .main .special-recommendation .title a {
+	  position: absolute; /* 子元素绝对定位 */
+	  right: 0; /* 右侧对齐 */
+	  bottom: 20%;
+	  padding-right: 50px;
+	  color: white;
+	  font-size: 20px;
+	  text-decoration: none;
+  }
+  
+  .main .special-recommendation .title a:hover {
+	  color: #7a4dff;
+  }
